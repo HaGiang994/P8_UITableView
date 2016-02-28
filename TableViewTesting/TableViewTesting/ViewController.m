@@ -37,19 +37,43 @@
 }
 
 - (IBAction)btnEdit:(id)sender {
-    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Add smartphone" message:@"Please anter name of smartphone" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style: UIAlertActionStyleDefault handler:nil];
-    [alertView addAction:cancel];
-    [self presentViewController:alertView animated:YES completion:nil];
-    
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Add smartphone" message:@"Please anter name of smartphone" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Add", nil];
-//    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-//    [alertView show];
+   
 
 }
 
 - (IBAction)btnAdd:(id)sender {
+    
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Add smartphone" message:@"Please anter name of smartphone" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Add", nil];
+//        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+//        [alertView show];
+    
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Add smartphone" message:@"Please anter name of smartphone" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style: UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction *action){
+                                                   UITextField *textField = alertView.textFields[0];
+                                                   [phones addObject:textField.text];
+                                                   [self.tableView reloadData];
+                                               }];
+    
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style: UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction *action){
+                                                       NSLog(@"cancel btn");
+                                                       [alertView dismissViewControllerAnimated:YES completion:nil];
+                                                   }];
+    [alertView addAction:ok];
+    [alertView addAction:cancel];
+    
+    [alertView addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"phone name";
+        textField.keyboardType = UIKeyboardTypeDefault;
+       
+    }];
+    [self presentViewController:alertView animated:YES completion:nil];
+    
+    
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -66,9 +90,9 @@
 }
 
 
-//- (void)alertView:(UIAlertController *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 //    if (buttonIndex==1) {
-//        [phones addObject:[[alertView ] text]];
+//        [phones addObject:[[alertView textFieldAtIndex:0] text]];
 //        [self.tableView reloadData];
 //    }
 //}
