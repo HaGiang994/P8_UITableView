@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		489600EF1C843F1900EFC14A /* galaxys5.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600E81C843F1900EFC14A /* galaxys5.png */; };
+		489600F01C843F1900EFC14A /* htcdesign.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600E91C843F1900EFC14A /* htcdesign.png */; };
+		489600F11C843F1900EFC14A /* iphone6.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600EA1C843F1900EFC14A /* iphone6.png */; };
+		489600F21C843F1900EFC14A /* iphone6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600EB1C843F1900EFC14A /* iphone6plus.png */; };
+		489600F31C843F1900EFC14A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600EC1C843F1900EFC14A /* placeholder.png */; };
+		489600F41C843F1900EFC14A /* tab4.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600ED1C843F1900EFC14A /* tab4.png */; };
+		489600F51C843F1900EFC14A /* xperiaz.png in Resources */ = {isa = PBXBuildFile; fileRef = 489600EE1C843F1900EFC14A /* xperiaz.png */; };
 		48B45EFA1C80433000A81A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B45EF91C80433000A81A45 /* main.m */; };
 		48B45EFD1C80433000A81A45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B45EFC1C80433000A81A45 /* AppDelegate.m */; };
 		48B45F001C80433000A81A45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B45EFF1C80433000A81A45 /* ViewController.m */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		489600E81C843F1900EFC14A /* galaxys5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxys5.png; sourceTree = "<group>"; };
+		489600E91C843F1900EFC14A /* htcdesign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = htcdesign.png; sourceTree = "<group>"; };
+		489600EA1C843F1900EFC14A /* iphone6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6.png; sourceTree = "<group>"; };
+		489600EB1C843F1900EFC14A /* iphone6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6plus.png; sourceTree = "<group>"; };
+		489600EC1C843F1900EFC14A /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		489600ED1C843F1900EFC14A /* tab4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab4.png; sourceTree = "<group>"; };
+		489600EE1C843F1900EFC14A /* xperiaz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xperiaz.png; sourceTree = "<group>"; };
 		48B45EF51C80433000A81A45 /* TableViewTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B45EF91C80433000A81A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48B45EFB1C80433000A81A45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		489600E71C843F1900EFC14A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				489600E81C843F1900EFC14A /* galaxys5.png */,
+				489600E91C843F1900EFC14A /* htcdesign.png */,
+				489600EA1C843F1900EFC14A /* iphone6.png */,
+				489600EB1C843F1900EFC14A /* iphone6plus.png */,
+				489600EC1C843F1900EFC14A /* placeholder.png */,
+				489600ED1C843F1900EFC14A /* tab4.png */,
+				489600EE1C843F1900EFC14A /* xperiaz.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		48B45EEC1C80433000A81A45 = {
 			isa = PBXGroup;
 			children = (
+				489600E71C843F1900EFC14A /* images */,
 				48B45EF71C80433000A81A45 /* TableViewTesting */,
 				48B45EF61C80433000A81A45 /* Products */,
 			);
@@ -138,8 +167,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B45F081C80433100A81A45 /* LaunchScreen.storyboard in Resources */,
+				489600F11C843F1900EFC14A /* iphone6.png in Resources */,
+				489600F41C843F1900EFC14A /* tab4.png in Resources */,
+				489600EF1C843F1900EFC14A /* galaxys5.png in Resources */,
 				48B45F051C80433100A81A45 /* Assets.xcassets in Resources */,
 				48B45F031C80433100A81A45 /* Main.storyboard in Resources */,
+				489600F31C843F1900EFC14A /* placeholder.png in Resources */,
+				489600F51C843F1900EFC14A /* xperiaz.png in Resources */,
+				489600F01C843F1900EFC14A /* htcdesign.png in Resources */,
+				489600F21C843F1900EFC14A /* iphone6plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +335,7 @@
 				48B45F0E1C80433100A81A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
