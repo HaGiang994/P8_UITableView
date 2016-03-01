@@ -101,13 +101,19 @@
 //        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
 //        [alertView show];
    
-    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Add smartphone" message:@"Please anter name of smartphone" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Add smartphone" message:@"Please enter name of smartphone" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style: UIAlertActionStyleDefault
                                                handler:^(UIAlertAction *action){
                                                    UITextField *textField = alertView.textFields[0];
-                                                   [phones addObject:textField.text];
+                                                   NSDictionary *newPhone = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                             textField.text,@"name",
+                                                                             @"placeholder",@"image",
+                                                                             @"This is my new phone",@"detail",nil];
+                                                   [phones addObject:newPhone];
                                                    [self.tableView reloadData];
+//                                                 [phones addObject:textField.text];
+//                                                 [self.tableView reloadData];
                                                }];
     
     
