@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--tableListView-->
+        <!--TableListViewController-->
         <scene sceneID="wMz-c4-V9R">
             <objects>
-                <viewController storyboardIdentifier="tableListView" title="tableListView" id="W0p-Au-Qqv" customClass="tableListView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableListView" title="tableListView" id="W0p-Au-Qqv" userLabel="TableListViewController" customClass="TableListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="puq-up-Bgv"/>
                         <viewControllerLayoutGuide type="bottom" id="48c-LQ-wAI"/>
@@ -305,7 +305,7 @@
         <!--listView-->
         <scene sceneID="Faj-O9-dZx">
             <objects>
-                <viewController storyboardIdentifier="listView" title="listView" id="4kl-VX-nDD" customClass="listView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="listView" title="listView" id="4kl-VX-nDD" customClass="ListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DQj-0s-uNr"/>
                         <viewControllerLayoutGuide type="bottom" id="Xdq-Qt-OcS"/>
@@ -506,7 +506,7 @@
         <!--highestScoreView-->
         <scene sceneID="4TM-rc-G4N">
             <objects>
-                <viewController storyboardIdentifier="highestScoreView" title="highestScoreView" id="uZ0-9v-vrw" customClass="highestScoreView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="highestScoreView" title="highestScoreView" id="uZ0-9v-vrw" customClass="HighestScoreViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9TZ-l1-G81"/>
                         <viewControllerLayoutGuide type="bottom" id="GNH-p4-zUW"/>
@@ -633,6 +633,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GVc-bA-nbK"/>
+        <segue reference="V2A-tu-8Pc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -6,13 +6,13 @@
 //  Copyright © 2016 MacPro1. All rights reserved.
 //
 
-#import "listView.h"
+#import "ListViewController.h"
 UIAlertView *alert;
-@interface listView ()
+@interface ListViewController ()
 
 @end
 
-@implementation listView
+@implementation ListViewController
 
 
 - (void)viewDidLoad {
@@ -136,7 +136,4 @@ UIAlertView *alert;
         [self showInformationOfIndex:_indexSelected];
     }
 }
-
-
-
 @end

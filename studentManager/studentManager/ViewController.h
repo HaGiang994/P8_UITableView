@@ -7,17 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "listView.h"
+#import "ListViewController.h"
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITextField *fullName;
-@property (strong, nonatomic) IBOutlet UITextField *birth;
-@property (strong, nonatomic) IBOutlet UITextField *diemVan;
-@property (strong, nonatomic) IBOutlet UITextField *diemToan;
-@property (strong, nonatomic) IBOutlet UITextField *diemLy;
-@property (strong, nonatomic) IBOutlet UITextField *diemSu;
-@property (strong, nonatomic) IBOutlet UILabel *lblNoti;
+@property (weak, nonatomic) IBOutlet UITextField *fullName;
+@property (weak, nonatomic) IBOutlet UITextField *birth;
+@property (weak, nonatomic) IBOutlet UITextField *diemVan;
+@property (weak, nonatomic) IBOutlet UITextField *diemToan;
+@property (weak, nonatomic) IBOutlet UITextField *diemLy;
+@property (weak, nonatomic) IBOutlet UITextField *diemSu;
+@property (weak, nonatomic) IBOutlet UILabel *lblNoti;
 - (IBAction)btnSave:(id)sender;
 - (IBAction)btnHightestScore:(id)sender;
 //- (IBAction)btnListView:(id)sender;

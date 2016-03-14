@@ -13,11 +13,11 @@
 - (void)sendDataToA:(NSMutableArray *)array;
 @end
 
-@interface tableListView : UIViewController <UITableViewDataSource,UITableViewDelegate>
-@property (strong, nonatomic) IBOutlet TableViewCell *tableView;
+@interface TableListViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet TableViewCell *tableView;
 @property NSMutableArray *listSV;
-@property (strong, nonatomic) IBOutlet UITableView *tableListView;
-@property (strong, nonatomic) IBOutlet UILabel *lblTittle;
+@property (weak, nonatomic) IBOutlet UITableView *tableListView;
+@property (weak, nonatomic) IBOutlet UILabel *lblTittle;
 - (IBAction)diemToan:(id)sender;
 - (IBAction)diemLy:(id)sender;
 - (IBAction)diemVan:(id)sender;

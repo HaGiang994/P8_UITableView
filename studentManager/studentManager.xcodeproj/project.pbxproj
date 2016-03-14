@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D1A8E951C8BF7BA00A2FD27 /* tableListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A8E941C8BF7BA00A2FD27 /* tableListView.m */; };
+		8D1A8E951C8BF7BA00A2FD27 /* TableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A8E941C8BF7BA00A2FD27 /* TableListViewController.m */; };
 		8D1A8E981C8C213400A2FD27 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A8E971C8C213400A2FD27 /* TableViewCell.m */; };
 		8D1F7AB11C89499D001DC12F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AB01C89499D001DC12F /* main.m */; };
 		8D1F7AB41C89499D001DC12F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AB31C89499D001DC12F /* AppDelegate.m */; };
@@ -17,8 +17,8 @@
 		8D1F7ABF1C89499D001DC12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F7ABD1C89499D001DC12F /* LaunchScreen.storyboard */; };
 		8D1F7ACA1C89499E001DC12F /* studentManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AC91C89499E001DC12F /* studentManagerTests.m */; };
 		8D1F7AD51C89499E001DC12F /* studentManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AD41C89499E001DC12F /* studentManagerUITests.m */; };
-		8D1F7AE41C896CBB001DC12F /* listView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AE31C896CBB001DC12F /* listView.m */; };
-		8D1F7AE71C896DD6001DC12F /* highestScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AE61C896DD6001DC12F /* highestScoreView.m */; };
+		8D1F7AE41C896CBB001DC12F /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AE31C896CBB001DC12F /* ListViewController.m */; };
+		8D1F7AE71C896DD6001DC12F /* HighestScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F7AE61C896DD6001DC12F /* HighestScoreViewController.m */; };
 		8DBCF1451C8ED305008F90A7 /* bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCF1421C8ED305008F90A7 /* bronze.png */; };
 		8DBCF1461C8ED305008F90A7 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCF1431C8ED305008F90A7 /* gold.png */; };
 		8DBCF1471C8ED305008F90A7 /* silver.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCF1441C8ED305008F90A7 /* silver.png */; };
@@ -42,8 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D1A8E931C8BF7BA00A2FD27 /* tableListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableListView.h; sourceTree = "<group>"; };
-		8D1A8E941C8BF7BA00A2FD27 /* tableListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableListView.m; sourceTree = "<group>"; };
+		8D1A8E931C8BF7BA00A2FD27 /* TableListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListViewController.h; sourceTree = "<group>"; };
+		8D1A8E941C8BF7BA00A2FD27 /* TableListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableListViewController.m; sourceTree = "<group>"; };
 		8D1A8E961C8C213400A2FD27 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		8D1A8E971C8C213400A2FD27 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		8D1F7AAC1C89499D001DC12F /* studentManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studentManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,10 +62,10 @@
 		8D1F7AD01C89499E001DC12F /* studentManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studentManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1F7AD41C89499E001DC12F /* studentManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studentManagerUITests.m; sourceTree = "<group>"; };
 		8D1F7AD61C89499E001DC12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1F7AE21C896CBB001DC12F /* listView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listView.h; sourceTree = "<group>"; };
-		8D1F7AE31C896CBB001DC12F /* listView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listView.m; sourceTree = "<group>"; };
-		8D1F7AE51C896DD6001DC12F /* highestScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highestScoreView.h; sourceTree = "<group>"; };
-		8D1F7AE61C896DD6001DC12F /* highestScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = highestScoreView.m; sourceTree = "<group>"; };
+		8D1F7AE21C896CBB001DC12F /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		8D1F7AE31C896CBB001DC12F /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		8D1F7AE51C896DD6001DC12F /* HighestScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighestScoreViewController.h; sourceTree = "<group>"; };
+		8D1F7AE61C896DD6001DC12F /* HighestScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighestScoreViewController.m; sourceTree = "<group>"; };
 		8D25B42F1C8ADB3900CE2C2C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		8DBCF1421C8ED305008F90A7 /* bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bronze.png; sourceTree = "<group>"; };
 		8DBCF1431C8ED305008F90A7 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold.png; sourceTree = "<group>"; };
@@ -125,12 +125,12 @@
 				8D1F7AB51C89499D001DC12F /* ViewController.h */,
 				8D1F7AB61C89499D001DC12F /* ViewController.m */,
 				8D1F7AB81C89499D001DC12F /* Main.storyboard */,
-				8D1F7AE21C896CBB001DC12F /* listView.h */,
-				8D1F7AE31C896CBB001DC12F /* listView.m */,
-				8D1F7AE51C896DD6001DC12F /* highestScoreView.h */,
-				8D1F7AE61C896DD6001DC12F /* highestScoreView.m */,
-				8D1A8E931C8BF7BA00A2FD27 /* tableListView.h */,
-				8D1A8E941C8BF7BA00A2FD27 /* tableListView.m */,
+				8D1F7AE21C896CBB001DC12F /* ListViewController.h */,
+				8D1F7AE31C896CBB001DC12F /* ListViewController.m */,
+				8D1F7AE51C896DD6001DC12F /* HighestScoreViewController.h */,
+				8D1F7AE61C896DD6001DC12F /* HighestScoreViewController.m */,
+				8D1A8E931C8BF7BA00A2FD27 /* TableListViewController.h */,
+				8D1A8E941C8BF7BA00A2FD27 /* TableListViewController.m */,
 				8D1F7ABB1C89499D001DC12F /* Assets.xcassets */,
 				8D1F7ABD1C89499D001DC12F /* LaunchScreen.storyboard */,
 				8D1F7AC01C89499D001DC12F /* Info.plist */,
@@ -308,9 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1A8E981C8C213400A2FD27 /* TableViewCell.m in Sources */,
-				8D1F7AE41C896CBB001DC12F /* listView.m in Sources */,
-				8D1A8E951C8BF7BA00A2FD27 /* tableListView.m in Sources */,
-				8D1F7AE71C896DD6001DC12F /* highestScoreView.m in Sources */,
+				8D1F7AE41C896CBB001DC12F /* ListViewController.m in Sources */,
+				8D1A8E951C8BF7BA00A2FD27 /* TableListViewController.m in Sources */,
+				8D1F7AE71C896DD6001DC12F /* HighestScoreViewController.m in Sources */,
 				8D1F7AB71C89499D001DC12F /* ViewController.m in Sources */,
 				8D1F7AB41C89499D001DC12F /* AppDelegate.m in Sources */,
 				8D1F7AB11C89499D001DC12F /* main.m in Sources */,

@@ -6,15 +6,15 @@
 //  Copyright © 2016 MacPro1. All rights reserved.
 //
 
-#import "tableListView.h"
-#import "listView.h"
+#import "TableListViewController.h"
+#import "ListViewController.h"
 
-@interface tableListView ()
+@interface TableListViewController ()
 
 @end
 
 NSString *tmpString;
-@implementation tableListView
+@implementation TableListViewController
 
 - (IBAction)diemToan:(id)sender {
     [self sortArrayWithString:@"diemtoan"];
@@ -111,7 +111,7 @@ NSString *tmpString;
 }
 
 - (void)pushToListViewController:(NSInteger)index{
-    listView            *listViewController;
+    ListViewController            *listViewController;
     UIStoryboard *storyboard                      = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     listViewController              = [storyboard instantiateViewControllerWithIdentifier:@"listView"];
     [listViewController.listSV removeAllObjects];

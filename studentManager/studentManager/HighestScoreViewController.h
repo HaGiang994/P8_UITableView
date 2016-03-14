@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface highestScoreView : UIViewController
+@interface HighestScoreViewController : UIViewController
 @property NSMutableArray *listSV;
-@property (strong, nonatomic) IBOutlet UITextField *fullName;
-@property (strong, nonatomic) IBOutlet UILabel *lblTitle;
-@property (strong, nonatomic) IBOutlet UITextField *score;
+@property (weak, nonatomic) IBOutlet UITextField *fullName;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UITextField *score;
 - (IBAction)diemVan:(id)sender;
 - (IBAction)diemToan:(id)sender;
 - (IBAction)diemSu:(id)sender;

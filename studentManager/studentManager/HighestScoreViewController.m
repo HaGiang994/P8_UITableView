@@ -6,21 +6,17 @@
 //  Copyright © 2016 MacPro1. All rights reserved.
 //
 
-#import "highestScoreView.h"
+#import "HighestScoreViewController.h"
 
-@interface highestScoreView ()
+@interface HighestScoreViewController ()
 
 @end
 
-
-@implementation highestScoreView
-
-
+@implementation HighestScoreViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setFrame];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,9 +34,11 @@
 - (IBAction)diemSu:(id)sender {
     [self showInfoOfMon:@"diemsu"];
 }
+
 - (IBAction)diemLy:(id)sender {
     [self showInfoOfMon:@"diemly"];
 }
+
 - (void)setFrame {
     _fullName.enabled   = NO;
     _score.enabled      = NO;

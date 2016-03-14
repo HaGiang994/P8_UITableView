@@ -7,15 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "listView.h"
-#import "highestScoreView.h"
-#import "tableListView.h"
+#import "ListViewController.h"
+#import "HighestScoreViewController.h"
+#import "TableListViewController.h"
 
 NSInteger count;
 UIStoryboard        *storyboard;
-listView            *listViewController;
-highestScoreView    *highestScoreViewColler;
-tableListView       *tableListViewController;
+ListViewController            *listViewController;
+HighestScoreViewController    *highestScoreViewColler;
+TableListViewController       *tableListViewController;
 
 @interface ViewController ()
 
@@ -23,11 +23,27 @@ tableListView       *tableListViewController;
 
 @implementation ViewController
 
+-(void)dismissKeyboard {
+    [_fullName resignFirstResponder];
+    [_birth resignFirstResponder];
+    [_diemToan resignFirstResponder];
+    [_diemLy resignFirstResponder];
+    [_diemSu resignFirstResponder];
+    [_diemVan resignFirstResponder];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initVariable];
     [self cocau];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -74,17 +90,16 @@ tableListView       *tableListViewController;
                                                                                       }];
     [_listSV addObject:sinhvien];
     NSLog(@"%lu",(unsigned long)[_listSV count]);
+    
+    _fullName.text = nil;
+    _diemLy.text = nil;
+    _birth.text = nil;
+    _diemToan.text = nil;
+    _diemSu.text = nil;
+    _diemVan.text = nil;
    
 }
 
-//- (BOOL)textFieldShouldReturn:(UITextField *)theTextField
-//{
-//    if (theTextField == self.fullName)
-//    {
-//        [theTextField resignFirstResponder];
-//    }
-//    return YES;
-//}
 
 -(BOOL)checkStatement {
     if (_fullName.text.length <= 4 ||
